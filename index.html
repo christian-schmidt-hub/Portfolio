@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo!</h1>
+        <p>Esta é uma página HTML simples com um pouco de estilo CSS.</p>
+        <p>Aqui você pode adicionar seu conteúdo, imagens, links e muito mais!</p>
+        
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+        
+        <p id="mensagem"></p>
+    </div>
+    
+    <script>
+        function mostrarMensagem() {
+            document.getElementById('mensagem').innerHTML = '✓ Você clicou no botão!';
+            document.getElementById('mensagem').style.color = '#4CAF50';
+            document.getElementById('mensagem').style.textAlign = 'center';
+            document.getElementById('mensagem').style.fontWeight = 'bold';
+        }
+    </script>
+</body>
+</html>
